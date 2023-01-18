@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   # root "articles#index"
   root :to => redirect('/videos')
 
-  get '/new_video', to: 'videos#new'
-  get '/videos', to: 'videos#index'
+  resources :videos
+  resources :categories, only: [:index]
 end

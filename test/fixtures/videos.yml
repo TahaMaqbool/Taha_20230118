@@ -3,7 +3,9 @@
 one:
   title: MyString
   thumbnail: MyString
+  category: one
 
 two:
   title: MyString
   thumbnail: MyString
+  category: two
