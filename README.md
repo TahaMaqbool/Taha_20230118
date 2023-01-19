@@ -31,6 +31,10 @@ Setup the database:
 
 This will create the database, run the migrations and seed the database so that categories are available when app starts.
 
+Install the front-end dependencies by running:
+
+``yarn install``
+
 Start the server:
 
 ``bin/dev``
