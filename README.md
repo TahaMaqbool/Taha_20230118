@@ -43,14 +43,21 @@ Start the server:
 ### Running tests
 Run the following command to run the tests:
 
-``bundle exec rspec``
+``rspec``
 
-* Running all tests:
-```bash
-bin/test
-```
 
 * Running tests for an specific file:
 ```bash
-bin/test test/models/video.rb
+rspec spec/models/video_spec.rb
 ```
+
+Finally, open the app in the browser:
+
+``http://localhost:3000``
+
+
+Feel free to contact me if you have any problems running the app or questions send me email at taha.maqbool96@gmail.com
+
+### Notes
+
+I have added two test files for test scenarios specs. All the videos are uploaded on S3 and locations are saved in Database with the variants.
