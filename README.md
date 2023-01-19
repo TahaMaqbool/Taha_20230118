@@ -1,24 +1,52 @@
-# README
+## Video App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Build Instructions
+Clone the repository and run the following commands in the root directory of the project:
 
-Things you may want to cover:
+``git clone git@github.com:TahaMaqbool/Taha_20230118.git``
 
-* Ruby version
+Go to the project directory:
 
-* System dependencies
+``cd Taha_20230118``
 
-* Configuration
+Set the ``master_key`` in ``config/master.key`` file provided in the email.
 
-* Database creation
+Install the system dependencies:
 
-* Database initialization
+Install imageMagick for image processing:
 
-* How to run the test suite
+``brew install imagemagick``
 
-* Services (job queues, cache servers, search engines, etc.)
+Install the image processing library ffmpeg:
 
-* Deployment instructions
+``brew install ffmpeg``
 
-* ...
+Now run the bundle command to install the gems:
+
+``bundle install``
+
+Setup the database:
+
+``rails db:setup``
+
+This will create the database, run the migrations and seed the database so that categories are available when app starts.
+
+Start the server:
+
+``bin/dev``
+
+
+### Running tests
+Run the following command to run the tests:
+
+``bundle exec rspec``
+
+* Running all tests:
+```bash
+bin/test
+```
+
+* Running tests for an specific file:
+```bash
+bin/test test/models/video.rb
+```
