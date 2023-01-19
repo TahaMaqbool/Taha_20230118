@@ -41,11 +41,6 @@ class VideosController < ApplicationController
     {
       id: video.id,
       title: video.title,
-      # thumbnails: {
-      #   small: video.thumbnail.variant(:small).processed.service_url,
-      #   medium: video.thumbnail.variant(:medium).processed.service_url,
-      #   large: video.thumbnail.variant(:large).processed.service_url
-      # },
       video_clip: video.video_clip_url,
       category: video.category.title
     }

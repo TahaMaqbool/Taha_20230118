@@ -5,6 +5,7 @@ class CategoriesController < ApplicationController
 
     respond_to do |format|
       format.json { render json: @categories }
+      format.html
     end
   end
 end
