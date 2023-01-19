@@ -1,4 +1,3 @@
 class Category < ApplicationRecord
-  belongs_to :video
-
+  belongs_to :video, optional: true
 end
