@@ -137,7 +137,7 @@ export const NewVideo = () => {
         <div className="form-group row">
           <label htmlFor="title" className="col-sm-2 col-form-label">Category</label>
           <div className="col-sm-10">
-            <select className="form-select" aria-label="category select"
+            <select name="Category" className="form-select" aria-label="category select"
                     onChange={e => setSelectedCategory(e.target.value)} required>
               <option selected disabled>-- Please select one category --</option>
               { categories.map(category => (<option key={category.id} value={category.id}>{category.title}</option>))}

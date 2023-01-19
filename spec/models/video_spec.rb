@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Video, :type => :model do
+  let(:video) { Video.new(title: 'Test Video', category: Category.first) }
 
   describe 'Columns' do
     it { should have_db_column(:title).of_type(:string) }
@@ -13,8 +14,6 @@ RSpec.describe Video, :type => :model do
   end
 
   describe 'Validations' do
-    let(:video) { Video.create(title: 'Test Video', category: Category.first) }
-
     it 'validates supported video file types' do
       video.video_clip.attach(io: File.open(Rails.root.join('spec', 'fixtures', 'files', 'test_mp4_file.mp4')),
                               filename: 'test_mp4_file.mp4', content_type: 'video/mp4')
