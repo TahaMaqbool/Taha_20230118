@@ -27,7 +27,7 @@ export const VideoClips = () => {
                   <h5 className="card-text">{video.title}</h5>
                   <span className="badge bg-primary">{video.category}</span>
                 </div>
-                <video className="bd-placeholder-img card-img-top" width="100%" height="100%" controls>
+                <video className="bd-placeholder-img card-img-top" title={video.title} width="100%" height="100%" controls>
                     <source src={video.video_clip} />
                   </video>
                 </div>
