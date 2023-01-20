@@ -62,7 +62,7 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
-
+  # Interactive debugger for Ruby
   gem 'pry'
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
@@ -74,7 +74,6 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem 'pry'
   gem 'database_cleaner'
   gem 'database_cleaner-active_record'
   gem "capybara"
